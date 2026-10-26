@@ -36,6 +36,50 @@ The goal of this project was to explore how 3D graphics and animation can enhanc
 | CSS | Layout, styling, and responsive design |
 | Vercel | Hosting and deployment |
 
+
+## Architecture
+
+AURA is a client-side React application. Vite provides the development server and production build pipeline, while React Three Fiber connects the React component tree to Three.js for rendering the 3D product.
+
+```text
+Browser
+  |
+  v
+React Application
+  |
+  +-- Page Sections and UI
+  |     +-- Navigation
+  |     +-- Product Storytelling
+  |     +-- Feature Sections
+  |
+  +-- Animation Layer
+  |     +-- GSAP
+  |     +-- Scroll-Driven Motion
+  |
+  +-- 3D Product Scene
+        +-- React Three Fiber
+        +-- Three.js
+        +-- AURA One GLB Model
+
+Vite
+  +-- Development Server
+  +-- Production Build
+  +-- Lazy-Loaded 3D Scene
+
+Vercel
+  +-- Static Hosting
+  +-- HTTPS
+  +-- Response Security Headers
+```
+
+### Key Technical Decisions
+
+- **Separate 3D loading:** The product scene is loaded separately to reduce the amount of JavaScript required for the initial application load.
+- **Animation accessibility:** Reduced-motion preferences are considered so motion-sensitive users can have a more comfortable experience.
+- **Static deployment:** The current project does not require a custom backend or database.
+- **Security headers:** Response headers are configured through `vercel.json` and verified against the deployed site.
+
+
 ## Getting Started
 
 ### Prerequisites
