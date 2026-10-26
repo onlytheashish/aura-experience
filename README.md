@@ -37,9 +37,6 @@ The goal of this project was to explore how 3D graphics and animation can enhanc
 | Vercel | Hosting and deployment |
 
 
-## Architecture
-
-AURA is a client-side React application. Vite provides the development server and production build pipeline, while React Three Fiber connects the React component tree to Three.js for rendering the 3D product.
 
 ```text
 Browser
@@ -48,9 +45,6 @@ Browser
 React Application
   |
   +-- Page Sections and UI
-  |     +-- Navigation
-  |     +-- Product Storytelling
-  |     +-- Feature Sections
   |
   +-- Animation Layer
   |     +-- GSAP
