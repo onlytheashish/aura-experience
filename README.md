@@ -172,7 +172,7 @@ The Content Security Policy is currently configured in **Report-Only** mode. Thi
 
 ## Author
 
-**Ashish Kumar Singh**
+**Ashish Kumar **
 
 Explore the live project: https://aura-experience-two.vercel.app
 
